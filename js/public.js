@@ -6,7 +6,7 @@ function music(){
 				//\n是弹窗中的换行 没有分号;
 				//String是字符串
 			if($music == "方丈我爱你！"){
-				document.getElementById('music').src = 'http://music.163.com/outchain/player?type=2&id=484992531&auto=1&height=66';
+				document.getElementById('music').src = 'https://music.163.com/outchain/player?type=2&id=484992531&auto=1&height=66';
 				alert("我也很爱你啊!!!");
 				music++;
 				console.log(music);
