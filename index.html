@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>计算机80班</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<link rel="shortcut icon" type="image/x-icon" href="https://imgazure.microsoftstore.com.cn/_ui/desktop/theme-light/img/favicon.ico" />
+		<!--上面是响应式-->
+		<link rel="stylesheet" href="css/public.css" />
+		<!--上面是公共CSS-->
+		<link rel="stylesheet" href="css/style.css" />
+		<!--上面是页面CSS-->
+		<script src="js/public.js"></script>
+		<!--上面是公共JS-->
+		<style>
+			body{margin: 0;padding: 0;width: 100%;}
+			a,img,button{display: inline-block;}
+			a{
+				color: rgb(51,51,51);
+				text-decoration: none;
+			}
+			a:visited{
+				color: rgb(51,51,51);
+			}
+			a:hover{
+				color: gold;
+				text-decoration: underline;
+			}
+			.text{
+				font-size: 16px;
+			}
+		</style>	
+
+	</head>
+	<body>
+		<div class="header">
+			<ul>
+				<li><a href="index.html">主页</a></li>
+				<li><a href="thing.html">班级大事记</a></li>
+				<li><a href="about.txt">关于</a></li>
+				<li><a href="javascript:music();" >背景音乐</a></li>
+			</ul>
+		</div>
+		<div class="main">
+			<div class="time">
+					<span>2017年10月1日</span>
+				</div>
+			<div class="main_main">
+				<div id="work">
+				<span></span>
+				<span class="subject">语文</span>
+					<p class="content" style="font-size: 20px;color:burlywood;">
+						背会全文注释
+						<a target="_blank" href="" class="more" id="havework1">查看更多»</a>
+					</p>
+				<span class="subject">数学</span>
+					<p class="content"  style="font-size: 20px;color:burlywood;">
+						数学练习册18，19，20，21
+						<a target="_blank" href="" class="more" id="havework2">查看更多»</a>
+					</p>
+				<span class="subject">英语</span>
+					<p class="content" style="font-size: 20px;color:burlywood;">
+						详情点击查看更多
+						<a target="_blank" href="img/homework/EN_2017.10.13.jpg" class="more" id="havework3">查看更多»</a>
+					</p>
+				<span class="subject">计算机</span>
+					<p class="content" style="font-size: 20px;color:burlywood;">
+						继续背书和笔记本
+						<a target="_blank" href="" class="more" id="havework4">查看更多»</a>
+					</p>
+				</div>
+			<div id="paizhao">
+				<p class="content" id="nohave"></p>	
+				<div class="img" id="img">		
+				<a href=javascript:alert("你这么爱学习吗&nbsp;对不起&nbsp;我也不知道作业233");>
+					<img src="img/nohave.jpg" height="300px" />
+				</a>
+				</div>
+			</div>	
+		</div>
+			<!--<div class="content">
+				历次作业
+			</div>-->
+		</div>
+		<div class="footer">
+			<strong>Copyright© 2017 www.DanyHug.com. 
+				<br />
+			All Rights Reserved</strong>
+		</div>
+		<!--网易云歌曲-->
+	<iframe id="music" frameborder="no" border="0" marginwidth="0" marginheight="0" width="0" height="0">
+		</iframe>
+		
+	</div>
+	</body>
+	<script>
+		//这些变量分别是干嘛的
+		var work = 2;
+		//如果等于2 则图片不显示 等于1 图片显示
+		var HaveWork1 = 1	//语文
+			HaveWork2 = 1	//数学
+			HaveWork3 = 2	//英语
+			HaveWork4 = 1;	//计算机
+			zuoye	  = "目前没有更多作业了哦";
+		//如果havework为1 则查看更多为 “目前没有更多作业”
+		
+		//以下为作业是否为图片
+		if(work == 1){	
+			document.getElementById('nohave').innerHTML = "作业被拍成<span>照片</span> <br>详情点击图片<span>下载</span>";
+			//隐藏作业
+			document.getElementById('work').style.display = 'none';
+		}
+		else{
+			//不显示图片
+			document.getElementById('paizhao').style.display = 'none';
+			console.log("太好了 今天的作业不用照2333");
+		}
+		
+		//以下为作业是否有..
+		if(HaveWork1 == 1){
+			document.getElementById('havework1').href = "javascript:alert(zuoye)";
+		}
+		if(HaveWork2 == 1){
+			document.getElementById('havework2').href = "javascript:alert(zuoye)";
+		}
+		if(HaveWork3 == 1){
+			document.getElementById('havework3').href = "javascript:alert(zuoye)";
+		}
+		if(HaveWork4 == 1){
+			document.getElementById('havework4').href = "javascript:alert(zuoye)";
+		}
+		</script>
+</html>

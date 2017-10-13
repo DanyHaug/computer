@@ -1,0 +1,28 @@
+@charset "utf-8";
+h1{
+	color: red;
+	text-align: center;
+	padding-top: 6px;
+	padding-bottom: 10px;
+	border-bottom: 4px dotted slateblue;
+}
+h1>span{
+	font-size: 46px;
+	font-style:italic;
+	font-weight: bold;
+	font-family: '宋体';
+}
+
+
+.main{
+	background: rgba(30,37,53,.8);
+}
+.main_main{
+	margin-top: 10px;
+	padding-left: 20px;
+}
+img{
+	padding-bottom: 10px;
+	margin-top: 10px;
+	border-bottom: 2px double salmon;
+}

@@ -1,0 +1,48 @@
+@charset "utf-8";
+/*本页面为公共部分*/
+/*下面是载入字体*/
+@font-face {
+font-family:'xiaoyahei';
+src: url('msyh.ttf'); 
+font-family: 'dayahei';
+src:url('msyhbd.ttf');
+font-family: 'Arial';
+src:url('arial.ttf');
+font-family: 'number1';
+src:url('number1.ttf');
+}
+
+/*这是页面内容*/
+.header{
+	height: 80px;
+	background-image: url(../img/bg_header.png);
+}
+ul{
+	padding: 32px 0 0 22px;
+	margin: 0;
+	/*position:absolute;
+	left:-10px;*/
+}
+li>a,{display: inline-block;line-height: 34px;}
+li{
+	display: inline-block;
+/*	width: 34px;*/
+	list-style: none;
+	padding:0 12px 0 12px;
+	float: left;
+	border: medium double rgb(250,0,255)
+}
+
+.footer{
+	height: 60px;
+	font-family: 'dayahei','Arial';
+	/*兼容IE*/
+	font-family: '微软雅黑','Arial';
+	text-align: center;
+	padding-top: 10px;
+	background: rgba(55,61,55,.8);
+	color: rgb(4,156,174);
+}
+strong{
+	font-size: 14px;	
+}
