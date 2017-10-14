@@ -11,6 +11,9 @@ function music(){
 				music++;
 				console.log(music);
 			}
+			else if($music == "李静怡"){
+				alert("向你表白");
+			}
 			else{
 				alert("好吧,有WIFI的时候一定要来听听啊，这歌真的不错233");
 				
